@@ -34,7 +34,7 @@ CREATE TABLE SpotifyClone.album(
 CREATE TABLE SpotifyClone.cancoes(
       cancao_id INT PRIMARY KEY AUTO_INCREMENT,
       nome_cancao VARCHAR(100) NOT NULL,
-      duracao_segundos VARCHAR(10) NOT NULL,
+      duracao_segundos decimal(3) NOT NULL,
       album_id INT NOT NULL,
       artista_id INT NOT NULL,
 	FOREIGN KEY (album_id) REFERENCES SpotifyClone.album(album_id),
@@ -102,16 +102,16 @@ INSERT INTO SpotifyClone.album (nome_album, ano_lançamento, artista_id)
   
 INSERT INTO SpotifyClone.cancoes (nome_cancao, duracao_segundos, album_id, artista_id)
   VALUES
-  ('BREAK MY SOUL', 279, 1, 1),
-  ("VIRGO'S GROOVE", 379, 1, 1),
-  ('ALIEN SUPERSTAR', 116, 1, 1),
-  ("Don't Stop Me Now", 204, 2, 2),
-  ("Under Pressure", 152, 3, 2),
-  ("Como Nossos Pais", 105, 4, 3),
-  ("O Medo de Amar é o Medo de Ser Livre", 207, 5, 3),
-  ("Samba em Paris", 267, 6, 4),
-  ("The Bard's Song", 244, 7, 5),
-  ("Feeling Good", 100, 8, 6);
+  ('BREAK MY SOUL', "279", 1, 1),
+  ("VIRGO'S GROOVE", "369", 1, 1),
+  ('ALIEN SUPERSTAR', '116', 1, 1),
+  ("Don't Stop Me Now", '203', 2, 2),
+  ("Under Pressure", '152', 3, 2),
+  ("Como Nossos Pais", '105', 4, 3),
+  ("O Medo de Amar é o Medo de Ser Livre", '207', 5, 3),
+  ("Samba em Paris", '267', 6, 4),
+  ("The Bard's Song", '244', 7, 5),
+  ("Feeling Good", "100", 8, 6);
 
 INSERT INTO SpotifyClone.historico_reproducoes (usuario_id, cancao_id, data_reproducao)
  VALUES
