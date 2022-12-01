@@ -115,7 +115,7 @@ INSERT INTO SpotifyClone.cancoes (nome_cancao, duracao_segundos, album_id, artis
 
 INSERT INTO SpotifyClone.historico_reproducoes (usuario_id, cancao_id, data_reproducao)
  VALUES
-   (1, 8, "2020-03-06 11:22:33"),
+   (1, 8, "2022-02-28 10:45:55"),
    (1, 2, "2020-05-02 05:30:35"),
    (1, 10, "2020-03-06 11:22:33"),
    (2, 10, "2022-08-05 08:05:17"),
